@@ -5,7 +5,7 @@ Welcome to [Butler's Javascript and Typescript SDK](https://butlerlabs.ai)
       functions to make programming easier
 
 ## Installation & Usage
-### pip install
+### npm install
 
 ```sh
 npm install butler-sdk
