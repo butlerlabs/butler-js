@@ -17,7 +17,7 @@ Please follow the [installation procedure](#installation--usage) and then run th
 
 ```typescript
 
-import { Butler }
+import { Butler } from 'butler-sdk';
 # Get API Key from https://docs.butlerlabs.ai/reference/uploading-documents-to-the-rest-api#get-your-api-key
 const apiKey = '<api-key>'
 # Get Queue ID from https://docs.butlerlabs.ai/reference/uploading-documents-to-the-rest-api#go-to-the-model-details-page
