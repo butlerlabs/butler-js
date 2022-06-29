@@ -18,13 +18,13 @@ Please follow the [installation procedure](#installation--usage) and then run th
 ```typescript
 
 import { Butler } from 'butler-sdk';
-# Get API Key from https://docs.butlerlabs.ai/reference/uploading-documents-to-the-rest-api#get-your-api-key
+// Get API Key from https://docs.butlerlabs.ai/reference/uploading-documents-to-the-rest-api#get-your-api-key
 const apiKey = '<api-key>'
-# Get Queue ID from https://docs.butlerlabs.ai/reference/uploading-documents-to-the-rest-api#go-to-the-model-details-page
+// Get Queue ID from https://docs.butlerlabs.ai/reference/uploading-documents-to-the-rest-api#go-to-the-model-details-page
 const queueId = '<queue_id>'
 const file = fs.createReadStream('test.pdf');
 
-# Create client
+// Create client
 const client = new Butler(apiKey)
 
 client.extractFile(queueId, file).then((x) => {
