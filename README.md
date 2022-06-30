@@ -15,6 +15,26 @@ npm install butler-sdk
 
 Please follow the [installation procedure](#installation--usage) and then run the following:
 
+###Javascript
+```javascript
+const fs = require('fs');
+const { Butler } = require('butler-sdk');
+// Get API Key from https://docs.butlerlabs.ai/reference/uploading-documents-to-the-rest-api#get-your-api-key
+const apiKey = '<api-key>'
+// Get Queue ID from https://docs.butlerlabs.ai/reference/uploading-documents-to-the-rest-api#go-to-the-model-details-page
+const queueId = '<queue_id>'
+const file = fs.createReadStream('test.pdf');
+
+// Create client
+const client = new Butler(apiKey)
+
+client.extractFile(queueId, file).then((x) => {
+  console.log(x);
+});
+
+
+```
+###Typescrupt
 ```typescript
 
 import { Butler } from 'butler-sdk';
