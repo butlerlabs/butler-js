@@ -5,6 +5,6 @@ const apiKey = process.env.API_KEY || ''
 const client = new Butler(apiKey)
 const queueId = process.env.QUEUE_ID || ''
 const file = fs.createReadStream('test.pdf');
-client.extractFile(queueId, file).then((x) => {
+client.extractDocument(queueId, file).then((x) => {
   console.log(x);
 })

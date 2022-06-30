@@ -12,7 +12,8 @@ export class Butler {
     this.queuesApi = new QueuesApi(config);
   }
 
-  extractFile(queueId: string, file: any): Promise<AxiosResponse<ExtractionResultsDto, any>> {
-    return this.queuesApi.extractFile(queueId, file);
+  async extractDocument(queueId: string, file: any): Promise<ExtractionResultsDto> {
+    const res = await this.queuesApi.extractDocument(queueId, file);
+    return res.data;
   }
 }
