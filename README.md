@@ -28,7 +28,7 @@ const file = fs.createReadStream('test.pdf');
 // Create client
 const client = new Butler(apiKey)
 
-client.extractFile(queueId, file).then((x) => {
+client.extractDocument(queueId, file).then((x) => {
   console.log(x);
 });
 
@@ -47,7 +47,7 @@ const file = fs.createReadStream('test.pdf');
 // Create client
 const client = new Butler(apiKey)
 
-client.extractFile(queueId, file).then((x) => {
+client.extractDocument(queueId, file).then((x) => {
   console.log(x);
 });
 ```
