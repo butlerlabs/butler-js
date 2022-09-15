@@ -15,7 +15,7 @@ npm install butler-sdk
 
 Please follow the [installation procedure](#installation--usage) and then run the following:
 
-###Javascript
+### Javascript
 ```javascript
 const fs = require('fs');
 const { Butler } = require('butler-sdk');
@@ -34,7 +34,7 @@ client.extractDocument(queueId, file).then((x) => {
 
 
 ```
-###Typescrupt
+### Typescript
 ```typescript
 
 import { Butler } from 'butler-sdk';
@@ -62,3 +62,5 @@ openapi-generator generate -i https://app.butlerlabs.ai/api/docs-json -g typescr
 ```sh
 API_KEY="api-key" QUEUE_ID="queue-id" yarn run ts-node test.ts
 ```
+
+
